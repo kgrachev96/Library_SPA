@@ -1,5 +1,11 @@
 import * as React from 'react';
 import {render} from 'react-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import '../../dist/style.scss';
+
+import Home from '../pages/Home';
+import Toolbar from '../components/Toolbar';
+//import Content from '../components/Content';
 
 class App extends React.Component<any, any>{
 
@@ -9,9 +15,16 @@ class App extends React.Component<any, any>{
 
     render() {
         return(
-            <main>
-                <h1>Привет!</h1>
-            </main>
+            <Router>
+                <div>
+                    <Toolbar />
+                    
+                        {/* <Content /> */}
+                            {/* <Route path = "/" component = {Home} /> */}
+                            <Home />
+                        {/* <Content /> */}
+                </div>
+            </Router>
         )
     }
 

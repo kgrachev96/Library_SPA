@@ -1,4 +1,5 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: './src/App/index',
@@ -19,7 +20,15 @@ module.exports = {
             options: {
                 configFilename: 'tsconfig.json'
             }
-        }]
+        },
+        {
+            test: /\.s?css$/,
+            use: [
+                "style-loader",
+                "css-loader",
+                "sass-loader",
+            ]
+        }],
     },
 
     devServer:{
