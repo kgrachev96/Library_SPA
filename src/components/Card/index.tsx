@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import './style.scss';
 
 export default class Card extends React.Component<any, any> {
 
