@@ -1,22 +1,19 @@
 import * as React from 'react';
 
+import './style.scss';
+
 class Login extends React.Component<any, any> {
 
     constructor(props: any){
         super(props);
-
-        this.state = {
-            usernameInput: '',
-            passwordInput: 0
-        }
     }
 
     onSubmit = (event: any) => {
         event.preventDefault();
         
         this.props.onLogin({
-            username: this.state.usernameInput.value,
-            password: this.state.passwordInput.value
+            username: this.props.usernameInput.value,
+            password: this.props.passwordInput.value
         });
     };
 
@@ -24,25 +21,23 @@ class Login extends React.Component<any, any> {
         return (
             <main id="login">
                 <form onSubmit={this.onSubmit}>
-                    <div className="mdc-textfield">
+                    <div className = "textfield">
                         <input
                             type="text"
                             name="username"
-                            className="mdc-textfield__input"
                             placeholder="Имя пользователя"
-                            ref={input => this.state.usernameInput = input} />
+                            ref={input => this.props.usernameInput = input} />
                     </div>
                     
-                    <div className="mdc-textfield">
+                    <div className = "textfield">
                         <input
                             type="password"
                             name="password"
-                            className="mdc-textfield__input"
                             placeholder="Пароль"
-                            ref={input => this.state.passwordInput = input} />
+                            ref={input => this.props.passwordInput = input} />
                     </div>
 
-                    <button type="submit" className="mdc-button mdc-button--primary mdc-button--raised">Войти</button>
+                    <button type="submit" className = "button">Войти</button>
                 </form>
             </main>
         );

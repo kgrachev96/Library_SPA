@@ -1,19 +1,19 @@
-// import * as React from 'react';
+import * as React from 'react';
 
-// export default class Content extends React.Component<any, any>{
+import './style.scss';
 
-//     constructor(props: any){
-//         super(props);
+export default class Content extends React.Component<any, any>{
 
-//         this.state = {
-//             children: {}
-//         }
-//     }
-//     render(){
-//     return (
-//         <div className="content">
-//             {this.state.children}
-//         </div>
-//     );
-//     }
-// }
+    constructor(props: any){
+        super(props);
+    }
+    render(){
+    return (
+        <div className="content">
+            <main>
+                {this.props.children}
+            </main>
+        </div>
+    );
+    }
+}

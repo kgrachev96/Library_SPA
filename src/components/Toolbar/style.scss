@@ -1,10 +1,7 @@
-$primary: #E81C4F;
 $white: #FFFFFF;
-$black: #000000;
 $silver: #DDDDDD;
 $silver-light: #F5F7F9;
 $text-color: #566B78;
-$pre-border: #6699CC;
 
 nav {
     ul {
@@ -25,19 +22,18 @@ nav {
     }
 }
 
-body {
-  background-color: $silver;
-  color: $text-color;
-  font-family: 'Inconsolata', monospace;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
 header {
   background-color: gray;
   line-height: 1.2;
   padding: 8vw 2em;
   text-align: center;
+  margin:0 auto;
+  max-width:95%;
+  box-sizing:border-box;
+  padding:40px;
+  border-radius:5px; 
+  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);        
+  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45); 
   
   h1 {
     color: $white;
