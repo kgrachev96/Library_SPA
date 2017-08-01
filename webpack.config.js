@@ -1,8 +1,11 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/App/index',
-
+    devtool: 'source-map',
+    entry: [
+        "webpack-dev-server/client?http://127.0.0.0:8080/",
+        './src/App/index'
+    ],
     output: {
         filename: 'app.js',
         path: path.resolve(__dirname, './dist')

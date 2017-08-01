@@ -1,5 +1,7 @@
 import * as React from 'react';
-import { HashRouter, Link } from 'react-router-dom';
+import { HashRouter, NavLink } from 'react-router-dom';
+
+import ToolbarLink from '../ToolbarLink';
 
 import './style.scss';
 
@@ -22,13 +24,13 @@ export default class Toolbar extends React.Component<any, any> {
                 <section>
                     <nav className = "navStyle">
                         <ul>
-                        <li><Link to = "/" className="tab">Главная</Link></li>
-                        <li><Link to ="/about" className="tab">О проекте</Link></li>
-                        <li><Link to ="/books" className="tab">Книги</Link></li>
+                        <li><ToolbarLink exact to = "/" className="tab">Главная</ToolbarLink></li>
+                        <li><ToolbarLink to ="/about" className="tab">О проекте</ToolbarLink></li>
+                        <li><ToolbarLink to ="/books" className="tab">Книги</ToolbarLink></li>
                         {this.props.user ?
-                            <li><Link to ="/logout" className="tab">Выйти</Link></li>
+                            <li><ToolbarLink to ="/logout" className="tab">Выйти</ToolbarLink></li>
                             :
-                            <li><Link to ="/login" className="tab">Войти</Link></li>
+                            <li><ToolbarLink to ="/login" className="tab">Войти</ToolbarLink></li>
                         }
                         </ul>
                     </nav>
