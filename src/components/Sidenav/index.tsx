@@ -1,23 +1,23 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 
 import topics from './topics';
+import './style.scss';
 
 export default class Sidenav extends React.Component<any, any> {
     render(){
         return(
-        <aside className="mdc-permanent-drawer">
-            <nav className="mdc-list mdc-list--avatar-list">
+            <nav className="list">
                 {topics.map(topic => 
-                    <a
+                    <NavLink
                         key={topic.id}
-                        href={`/books/${topic.id}`}
-                        className="mdc-list-item">
-                        <img src={`/img/topics/${topic.id}.svg`} className="mdc-list-item__start-detail"/>
-                            {topic.title}
-                    </a>
+                        to={`/books/${topic.id}`}
+                        className="list-item">
+                        <img src={`/img/topics/${topic.id}.svg`} className = "nav-im"/>
+                        {topic.title}
+                    </NavLink>
                 )}
             </nav>
-        </aside>
         );
     }
 }

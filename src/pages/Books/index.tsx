@@ -7,13 +7,13 @@ import './style.scss';
 
 function Books() {
     return (
-        <main id="books">
+        <div>
                     {books.map((book, index) =>
                         <div key={index} className = "block">
                             <Card book={book} />
                         </div>
                     )}
-        </main>
+        </div>
     );
 }
 

@@ -1,0 +1,14 @@
+
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 100px; /* Радиус скругления */
+    box-shadow: 0 0 0 3px yellow, 0 0 13px #333;
+}
+
+.list-item {
+    display: block;
+}
