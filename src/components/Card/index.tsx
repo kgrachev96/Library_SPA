@@ -1,25 +1,21 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 
-export default class Card extends React.Component<any, any> {
+function Card ( { book }: any ) {
 
-    constructor(props: any){
-        super(props);
-
-    }
-
-    render(){
     return (
         <div className = "card">
             <div className = "card-block">
-                <img src={`/img/books/${this.props.book.cover}`} alt={this.props.book.title} />
+                <img src={`/img/books/${book.cover}`} alt={book.title} />
 
-                    <h2 className = "card__title card__title--large">{this.props.book.title}</h2>
-                    <p className = "card__subtitle">{this.props.book.author}</p>
-                    <p className = "card__subtitle">{this.props.book.publisher}, {this.props.book.year}</p>
-                    <a href={`/books/${this.props.book.topic}/${this.props.book.slug}`}>Подробнее</a>
+                    <h2>{book.title}</h2>
+                    <p>{book.author}</p>
+                    <p>{book.publisher}, {book.year}</p>
             </div>
         </div>
     );
-    }
+
 }
+
+export default Card;

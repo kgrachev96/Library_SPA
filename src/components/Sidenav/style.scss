@@ -1,14 +1,18 @@
-
-
 .list {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    border-radius: 100px; /* Радиус скругления */
-    box-shadow: 0 0 0 3px yellow, 0 0 13px #333;
+    align-items: baseline;
+    height: 110px;
 }
 
-.list-item {
+.list-item, .list-img {
     display: block;
+    width: 100px;
+    text-align: center;
+}
+
+.nav--active {
+    border-bottom: 2px solid red;
+    text-decoration: none;
 }

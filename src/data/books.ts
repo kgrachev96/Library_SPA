@@ -1,5 +1,5 @@
-const books = [
-    {
+const books = [ 
+{
         "slug": "learning-javascript",
         "title": "Learning JavaScript",
         "author": "Ethan Brown",
@@ -98,6 +98,6 @@ const books = [
         "description": "Angular in Action teaches you modern application development with Angular. You'll begin with the basics of Angular and the technologies and techniques you'll use throughout the book, such as key features of TypeScript, newer ES6 syntax and concepts, and details about the tools needed to write professional Angular applications. Next, you'll build an Angular application from scratch. You'll learn about the primary pieces of an Angular application and see how they work together. Using lots of examples, you'll learn the core parts of Angular, such as Components, the Router, and Services. You'll also learn techniques like server-side rendering. Finally, you'll gain insight into advanced skills that should be part of any professional Angular developer's toolkit, such as testing, tooling options, and performance tuning.",
         "cover": "angular-in-action.jpg"
     }
-];
+]
 
 export default books;

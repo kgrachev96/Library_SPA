@@ -8,6 +8,9 @@ import Books from '../pages/Books/index';
 import Login from '../pages/Login/index';
 import NotFound from '../pages/NotFound';
 
+import topics from '../data/topics';
+import books from '../data/books';
+
 import Toolbar from '../components/Toolbar';
 import Content from '../components/Content';
 import Sidenav from '../components/Sidenav';
@@ -24,11 +27,11 @@ class App extends React.Component<any, any>{
                 <div>
                     <Toolbar />
                     <Content>
-                        <Route path = "/books" component = {Sidenav} /> 
+                        <Route path = "/books" render = {() => <Sidenav topics = {this.props.topics}/>} /> 
                         <Switch>
                             <Route exact path = "/" component = {Home} /> 
                             <Route path = "/about" component = {About} />
-                            <Route path = "/books" component = {Books} /> 
+                            <Route exact path = "/books/:topic?" render = {props => <Books books = {this.props.books} {...props}/>} /> 
                             <Route path = "/login" component = {Login} />
                             <Route component = {NotFound} /> 
                         </Switch>
@@ -40,4 +43,4 @@ class App extends React.Component<any, any>{
 
 }
 
-render(<App />, document.getElementById('root'));
+render(<App topics = {topics} books = {books}/>, document.getElementById('root'));

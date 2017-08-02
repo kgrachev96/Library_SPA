@@ -53,13 +53,13 @@ header {
     transition-property: color, background, border;
     
     &:hover {
-      border-color: yellow;
+      border-color: red;
     }
   }
 }
 
 .tab--active {
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid red;
     padding-top: 13px;
     color: #ffffff;
     text-decoration: none;
