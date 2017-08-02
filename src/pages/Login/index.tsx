@@ -25,24 +25,28 @@ class Login extends React.Component<any, any> {
     render() {
         return (
             <div id = "login">
+                
                 <form onSubmit={this.onSubmit}>
-                    <div className = "textfield">
+                    
+                    <fieldset>
+                    <h2>Авторизация</h2>
+                    <p><label>Логин:</label></p>
                         <input
                             type="text"
                             name="username"
                             placeholder="Имя пользователя"
                             ref={input => this.state.usernameInput = input} />
-                    </div>
-                    
-                    <div className = "textfield">
+            
+                    <p><label>Пароль:</label></p>
                         <input
                             type="password"
                             name="password"
                             placeholder="Пароль"
                             ref={input => this.state.passwordInput = input} />
-                    </div>
+                
+                    <p><button type="submit" className = "button">Войти</button></p>
+                    </fieldset>
 
-                    <button type="submit" className = "button">Войти</button>
                 </form>
             </div>
         );

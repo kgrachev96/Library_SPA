@@ -1,14 +1,69 @@
+
+
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+
 #login {
-    margin: 3rem auto;
+	margin: 10px auto;
+	width: 400px;
 }
 
-#login form .textfield,
-#login form .button {
-    width: 100%;
-    display: flex;
-    margin: auto;
+
+#login h2 {
+	background-color: #f95252;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	color: #fff;
+	font-size: 28px;
+	padding: 20px 30px;
 }
 
-#login form .textfield {
-    margin-bottom: 1rem;
-} 
+#login fieldset {
+    border: none;
+	background-color: #fff;
+	padding: 20px 26px;
+}
+
+#login fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#login fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#login fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#login fieldset input[type="text"], #login fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+#login fieldset button[type="submit"] {
+	background-color: #f95252;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+	cursor:pointer;
+}
+
+#login fieldset button[type="submit"]:hover {
+	background-color: red;
+}

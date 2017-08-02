@@ -35900,11 +35900,16 @@ var Login = (function (_super) {
         var _this = this;
         return (__WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { id: "login" },
             __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("form", { onSubmit: this.onSubmit },
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "textfield" },
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "text", name: "username", placeholder: "Имя пользователя", ref: function (input) { return _this.state.usernameInput = input; } })),
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", { className: "textfield" },
-                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "password", name: "password", placeholder: "Пароль", ref: function (input) { return _this.state.passwordInput = input; } })),
-                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { type: "submit", className: "button" }, "\u0412\u043E\u0439\u0442\u0438"))));
+                __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("fieldset", null,
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("h2", null, "\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u044F"),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null,
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("label", null, "\u041B\u043E\u0433\u0438\u043D:")),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "text", name: "username", placeholder: "Имя пользователя", ref: function (input) { return _this.state.usernameInput = input; } }),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null,
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("label", null, "\u041F\u0430\u0440\u043E\u043B\u044C:")),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("input", { type: "password", name: "password", placeholder: "Пароль", ref: function (input) { return _this.state.passwordInput = input; } }),
+                    __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("p", null,
+                        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("button", { type: "submit", className: "button" }, "\u0412\u043E\u0439\u0442\u0438"))))));
     };
     return Login;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]));
@@ -35951,7 +35956,7 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, "#login {\n  margin: 3rem auto; }\n\n#login form .textfield,\n#login form .button {\n  width: 100%;\n  display: flex;\n  margin: auto; }\n\n#login form .textfield {\n  margin-bottom: 1rem; }\n", ""]);
+exports.push([module.i, "input {\n  border: none;\n  font-family: inherit;\n  font-size: inherit;\n  font-weight: inherit;\n  line-height: inherit;\n  -webkit-appearance: none; }\n\n#login {\n  margin: 10px auto;\n  width: 400px; }\n\n#login h2 {\n  background-color: #f95252;\n  -webkit-border-radius: 20px 20px 0 0;\n  -moz-border-radius: 20px 20px 0 0;\n  border-radius: 20px 20px 0 0;\n  color: #fff;\n  font-size: 28px;\n  padding: 20px 30px; }\n\n#login fieldset {\n  border: none;\n  background-color: #fff;\n  padding: 20px 26px; }\n\n#login fieldset p {\n  color: #777;\n  margin-bottom: 14px; }\n\n#login fieldset p:last-child {\n  margin-bottom: 0; }\n\n#login fieldset input {\n  -webkit-border-radius: 3px;\n  -moz-border-radius: 3px;\n  border-radius: 3px; }\n\n#login fieldset input[type=\"text\"], #login fieldset input[type=\"password\"] {\n  background-color: #eee;\n  color: #777;\n  padding: 4px 10px;\n  width: 328px; }\n\n#login fieldset button[type=\"submit\"] {\n  background-color: #f95252;\n  color: #fff;\n  display: block;\n  margin: 0 auto;\n  padding: 4px 0;\n  width: 100px;\n  cursor: pointer; }\n\n#login fieldset button[type=\"submit\"]:hover {\n  background-color: red; }\n", ""]);
 
 // exports
 
