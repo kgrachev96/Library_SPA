@@ -4,7 +4,7 @@ module.exports = {
     devtool: 'source-map',
     entry: [
         "webpack-dev-server/client?http://127.0.0.0:8080/",
-        './src/App/index'
+        './src/index'
     ],
     output: {
         filename: 'app.js',

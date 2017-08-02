@@ -2,14 +2,7 @@ import * as React from 'react';
 
 import './style.scss';
 
-
-interface ILProp{
-    usernameInput: any
-    passwordInput: any
-    onLogin: any
-}
-
-class Login extends React.Component<ILProp, any> {
+class Login extends React.Component<any, any> {
 
     constructor(props: any){
         super(props);

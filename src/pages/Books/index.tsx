@@ -4,7 +4,7 @@ import Card from '../../components/Card';
 
 import './style.scss';
 
-function Books( { match, books: data }: any ) {
+function Books( { match, data }: any ) {
     const books = match.params.topic ? data.filter((book: any) => book.topic === match.params.topic) : data;
 
     return (
